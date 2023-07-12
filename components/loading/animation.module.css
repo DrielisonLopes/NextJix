@@ -1,0 +1,733 @@
+.containerAnima {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  overflow: hidden;
+  z-index: 11;
+  animation: alterarCor 1s linear 5s forwards;
+  transition: all 5s ease;
+}
+@keyframes alterarCor {
+  0% {
+    background-color: #000000;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.containerAnima .letterN {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  animation-name: zoom-in;
+  animation-delay: 0.5s;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  background-size: 4000px;
+  background-position: -1950px 0;
+}
+.containerAnima .letterN::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #000000;
+  width: 150%;
+  height: 30%;
+  left: -25%;
+  bottom: -27%;
+  border-radius: 50%;
+  z-index: 5;
+  transform-origin: left center;
+  background-size: 4000px;
+  background-position: -1950px 0;
+}
+.containerAnima .letterN {
+  transform-origin: 30% center;
+}
+.containerAnima .letterN .helper1 {
+  width: 19.5%;
+  height: 100%;
+  background-color: rgba(7, 85, 170, 0.5);
+  left: 22.4%;
+  top: 0;
+  transform: rotate(180deg);
+  animation-name: fading-lumieres-box;
+  animation-duration: 2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.containerAnima .letterN .helper1 .effectbrush {
+  animation-name: brush-moving;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+}
+.containerAnima .letterN .helper1 .effectbrush [class*=lamp] {
+  bottom: 0;
+  height: 40%;
+}
+.containerAnima .letterN .helper3 {
+  width: 19%;
+  height: 150%;
+  left: 40.5%;
+  top: -25%;
+  transform: rotate(-19.5deg);
+  box-shadow: 0px 0px 35px -12px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.containerAnima .letterN .helper3 .effectbrush {
+  animation-name: brush-moving;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+}
+.containerAnima .letterN .helper2 {
+  width: 19.5%;
+  height: 100%;
+  left: 57.8%;
+  top: 0;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+.containerAnima .letterN .helper2 .effectbrush {
+  animation-name: brush-moving;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+.containerAnima .letterN [class*=helper] {
+  position: absolute;
+}
+.containerAnima .letterN [class*=helper] .effectbrush {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  top: 0;
+  overflow: hidden;
+}
+.containerAnima .letterN [class*=helper] .effectbrush::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #0755AA;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0px 0px 29px 24px #0755AA;
+}
+.containerAnima .letterN [class*=helper] .effectbrush [class*=lamp] {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  height: 30%;
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp1 {
+  left: 0%;
+  width: 3.8%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 15%, rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp2 {
+  left: 3.8%;
+  width: 2.8%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 10%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp3 {
+  left: 6.6%;
+  width: 4.8%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 37%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp4 {
+  left: 11.4%;
+  width: 4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 23%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp5 {
+  left: 15.4%;
+  width: 4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 15%, rgba(0, 0, 0, 0) 86%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp6 {
+  left: 19.4%;
+  width: 2.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 27%, rgba(0, 0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp7 {
+  left: 21.9%;
+  width: 4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 20%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp8 {
+  left: 25.9%;
+  width: 2%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 30%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp9 {
+  left: 27.9%;
+  width: 4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 35%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp10 {
+  left: 31.9%;
+  width: 3.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp11 {
+  left: 35.4%;
+  width: 2%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 34%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp12 {
+  left: 37.4%;
+  width: 2.6%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 22%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp13 {
+  left: 40%;
+  width: 6%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 47%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp14 {
+  left: 46%;
+  width: 2%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 36%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp15 {
+  left: 48%;
+  width: 5.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 29%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp16 {
+  left: 53.5%;
+  width: 3%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp17 {
+  left: 56.5%;
+  width: 4.1%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 45%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp18 {
+  left: 60.6%;
+  width: 2.4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 34%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp19 {
+  left: 63%;
+  width: 4%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 47%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp20 {
+  left: 67%;
+  width: 1.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 27%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp21 {
+  left: 68.5%;
+  width: 2.8%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 37%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp22 {
+  left: 71.3%;
+  width: 2.3%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 9%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp23 {
+  left: 73.6%;
+  width: 2.2%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 28%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp24 {
+  left: 75.8%;
+  width: 1%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 37%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp25 {
+  left: 76.8%;
+  width: 2.1%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 28%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp26 {
+  left: 78.9%;
+  width: 4.1%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 34%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp27 {
+  left: 83%;
+  width: 2.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 21%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp28 {
+  left: 85.5%;
+  width: 4.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 39%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp29 {
+  left: 90%;
+  width: 2.8%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 30%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp30 {
+  left: 92.8%;
+  width: 3.5%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 19%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectbrush .lamp31 {
+  left: 96.3%;
+  width: 3.7%;
+  background: linear-gradient(to bottom, #0755AA 0%, #0755AA 37%, rgba(0, 0, 0, 0) 100%);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation-name: showing-lumieres;
+  animation-duration: 2s;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres [class*=lamp] {
+  position: absolute;
+  display: block;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(7, 85, 170, 0.75);
+  background: var(--color);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres [class*=lamp]::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  box-shadow: 0px 0px 10px 0px rgba(7, 85, 170, 0.75);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp1 {
+  --color: #ff0100;
+  z: 6;
+  left: 0.7%;
+  width: 1%;
+  animation-delay: 0.03s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp1::before {
+  left: 178%;
+  animation-delay: 1.83s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp2 {
+  --color: #ffde01;
+  left: 2.2%;
+  width: 1.4%;
+  animation-delay: 1.58s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp2::before {
+  left: 10%;
+  animation-delay: 0.59s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp3 {
+  --color: #ff00cc;
+  left: 5.8%;
+  width: 2.1%;
+  animation-delay: 0.89s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp3::before {
+  left: 42%;
+  animation-delay: 1.19s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp4 {
+  --color: #04fd8f;
+  left: 10.1%;
+  width: 2%;
+  animation-delay: 1.16s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp4::before {
+  left: 188%;
+  animation-delay: 0.09s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp5 {
+  --color: #ff0100;
+  left: 12.9%;
+  width: 1.4%;
+  animation-delay: 1.58s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp5::before {
+  left: 124%;
+  animation-delay: 0.18s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp6 {
+  --color: #ff9600;
+  left: 15.3%;
+  width: 2.8%;
+  animation-delay: 1.14s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp6::before {
+  left: 69%;
+  animation-delay: 1.38s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp7 {
+  --color: #0084ff;
+  left: 21.2%;
+  width: 2.5%;
+  animation-delay: 0.05s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp7::before {
+  left: 8%;
+  animation-delay: 0.72s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp8 {
+  --color: #f84006;
+  left: 25%;
+  width: 2.5%;
+  animation-delay: 1.51s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp8::before {
+  left: 106%;
+  animation-delay: 1.32s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp9 {
+  --color: #ffc601;
+  left: 30.5%;
+  width: 3%;
+  animation-delay: calc(0.48 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp9::before {
+  left: 26%;
+  animation-delay: calc(1.31 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp10 {
+  --color: #ff4800;
+  left: 36.3%;
+  width: 3%;
+  animation-delay: calc(0.27 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp10::before {
+  left: 9%;
+  animation-delay: calc(0.65 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp11 {
+  --color: #fd0100;
+  left: 41%;
+  width: 2.2%;
+  animation-delay: calc(0.23 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp11::before {
+  left: 193%;
+  animation-delay: calc(1.07 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp12 {
+  --color: #01ffff;
+  left: 44.2%;
+  width: 2.6%;
+  animation-delay: calc(0.4 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp12::before {
+  left: 186%;
+  animation-delay: calc(0.95 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp13 {
+  --color: #ffc601;
+  left: 51.7%;
+  width: 0.5%;
+  animation-delay: calc(1.65 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp13::before {
+  left: 63%;
+  animation-delay: calc(0.93 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp14 {
+  --color: #ffc601;
+  left: 52.1%;
+  width: 1.8%;
+  animation-delay: calc(1.16 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp14::before {
+  left: 110%;
+  animation-delay: calc(0.26 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp15 {
+  --color: #0078fe;
+  left: 53.8%;
+  width: 2.3%;
+  animation-delay: calc(0.25 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp15::before {
+  left: 18%;
+  animation-delay: calc(0.91 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp16 {
+  --color: #0080ff;
+  left: 57.2%;
+  width: 2%;
+  animation-delay: calc(1.78 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp16::before {
+  left: 4%;
+  animation-delay: calc(1.7 + s);
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp17 {
+  --color: #ffae01;
+  left: 62.3%;
+  width: 2.9%;
+  animation-delay: 0.38s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp17::before {
+  left: 183%;
+  animation-delay: 1.76s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp18 {
+  --color: #ff00bf;
+  left: 65.8%;
+  width: 1.7%;
+  animation-delay: 0.2s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp18::before {
+  left: 87%;
+  animation-delay: 1.77s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp19 {
+  --color: #a601f4;
+  left: 72.8%;
+  width: 0.8%;
+  animation-delay: 1.46s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp19::before {
+  left: 167%;
+  animation-delay: 1.3s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp20 {
+  --color: #f30b34;
+  left: 74.3%;
+  width: 2%;
+  animation-delay: 1.72s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp20::before {
+  left: 2%;
+  animation-delay: 0.39s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp21 {
+  --color: #ff00bf;
+  left: 79.8%;
+  width: 2%;
+  animation-delay: 0.56s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp21::before {
+  left: 71%;
+  animation-delay: 0.45s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp22 {
+  --color: #04fd8f;
+  left: 78.2%;
+  width: 2%;
+  animation-delay: 1.83s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp22::before {
+  left: 121%;
+  animation-delay: 0.83s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp23 {
+  --color: #01ffff;
+  left: 78.5%;
+  width: 2%;
+  animation-delay: 0.14s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp23::before {
+  left: 152%;
+  animation-delay: 0.7s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp24 {
+  --color: #a201ff;
+  left: 85.3%;
+  width: 1.1%;
+  animation-delay: 0.57s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp24::before {
+  left: 172%;
+  animation-delay: 0.44s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp25 {
+  --color: #ec0014;
+  left: 86.9%;
+  width: 1.1%;
+  animation-delay: 0.59s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp25::before {
+  left: 126%;
+  animation-delay: 0.37s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp26 {
+  --color: #0078fe;
+  left: 88.8%;
+  width: 2%;
+  animation-delay: 0.58s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp26::before {
+  left: 198%;
+  animation-delay: 0.64s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp27 {
+  --color: #ff0036;
+  left: 92.4%;
+  width: 2.4%;
+  animation-delay: 0.41s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp27::before {
+  left: 86%;
+  animation-delay: 0.6s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp28 {
+  --color: #06f98c;
+  left: 96.2%;
+  width: 2.1%;
+  animation-delay: 0.13s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp28::before {
+  left: 90%;
+  animation-delay: 0.07s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp1,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp3,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp5,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp7,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp9,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp11,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp13,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp15,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp17,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp19,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp21,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp23,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp25,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp27 {
+  animation-name: lumieres-moving-left;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp1::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp3::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp5::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp7::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp9::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp11::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp13::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp15::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp17::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp19::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp21::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp23::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp25::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp27::before {
+  animation-name: lumieres-moving-left;
+  animation-duration: 5.5s;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp2,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp4,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp6,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp8,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp10,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp12,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp14,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp16,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp18,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp20,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp22,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp24,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp26,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp28 {
+  animation-name: lumieres-moving-right;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp2::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp4::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp6::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp8::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp10::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp12::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp14::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp16::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp18::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp20::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp22::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp24::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp26::before,
+.containerAnima .letterN [class*=helper] .effectlumieres .lamp28::before {
+  animation-name: lumieres-moving-right;
+  animation-duration: 5.5s;
+}
+
+@keyframes brush-moving {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes fading-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lumieres-moving-right {
+  0% {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(-10px) scaleX(1);
+  }
+  50% {
+    transform: translate(-60px);
+  }
+  100% {
+    transform: translate(-120px) scaleX(3);
+  }
+}
+@keyframes lumieres-moving-left {
+  0% {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(10px) scaleX(1);
+  }
+  50% {
+    transform: translate(60px);
+  }
+  100% {
+    transform: translate(120px) scaleX(3);
+  }
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(15);
+  }
+}
+@keyframes showing-lumieres {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fading-lumieres-box {
+  0% {
+    background-color: rgba(7, 85, 170, 0.5);
+  }
+  100% {
+    background-color: rgba(7, 85, 170, 0);
+  }
+}
+
+/*# sourceMappingURL=animation.module.css.map */
